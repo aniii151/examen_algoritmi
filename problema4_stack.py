@@ -1,29 +1,20 @@
 # Problema 4 – Stivă (20p)
+  #stiva   principiul lifo
 
-class Stack:
+
+class stiva:
     def __init__(self):
-        self._data = []
-
-    def push(self, x):
-        # TODO
-        pass
-
+        self.elemente= []
+    def push(self,element):  #adaug un elem
+        self.elemente.append(element)
     def pop(self):
-        # TODO
-        pass
+        return self.elemente.pop()
 
-    def peek(self):
-        # TODO
-        pass
-
-    def __repr__(self):
-        return f"Stack({self._data})"
 
 if __name__ == "__main__":
-    s = Stack()
+    s = stiva()
     s.push(5)
     s.push(7)
     s.pop()
     s.push(9)
-    print(s.peek())  # 9
     print(s)
